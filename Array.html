@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+
+<html>
   <head>
-    <meta charset="utf-8">
     <title>Array-Test</title>
+  <script type="text/javascript">
+    var students = new Array("Afton", "Marko", "Afton2", "Marko2");
+    Array.prototype.displayItems=function(){
+      for (i = 0; i<this.lenght;i++){
+        document.write(this[i] + "<br />");
+      }
+    }
+    document.write("Hallo");
+    document.write(students.length);
+    students.displayItems();
+  </script>
   </head>
   <body>
 
